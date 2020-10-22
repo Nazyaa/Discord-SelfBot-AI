@@ -10,7 +10,7 @@ const pingChance = 0.2; // Determines the chance for the bot to ping the user it
 const replyFactor = 21000; // Determines the time it'll take to reply in Milliseconds.
 const learnChannelBL = []; // Nazya will not respond or talk in any of the channels in the array.
 const sendChannelBL = []; // Nazya will not learn any words from the channels in the array.
-const wordsToFilter = [ "say" ]; // Any word within the array is filtered by Nazya.
+const wordsToFilter = [ "say" ]; // Any word within the array is filtered by the bot.
 let patterns = JSON.parse(raw); // Clarifying a pttern from the patterns.json file.
 let queue = 1; // Amount of messages allowed to be queued at a time. AVOID 0 FOR MESSAGE SPAM.
 
@@ -134,7 +134,7 @@ const commonFound = (message) => {
     };
 };
 
-// Ensuring that Nazya will reply to any message she is mentioned in.
+// Ensuring that the bot will reply to any message she is mentioned in.
 // Additional Message filterting and managing.
 const nameHeard = (message) => {
     if (sendChannelBL.includes(message.channel.id)) return;
@@ -213,7 +213,7 @@ client.on('message', async message => {
     nameHeard(message);
     
     // Responding with "no" if someone questions whether or not the bot is a bot.
-    if (message.content.includes("nazya bot")) {
+    if (message.content.includes("bot")) {
         var options = ["Yes I am totally a bot", "Beep Boop im a bot nigga.", "No I'm not actually a fucking bot you retard", "Do you really think I'm a bot?", "I'm pretty schizo but that doesn't mean I'm a bot"];
         var response = options[Math.floor(Math.random()*options.length)];
         try {
@@ -222,7 +222,7 @@ client.on('message', async message => {
             console.error("You fucked up with your anti bot detect");
         }
 }
-// Assigning a 1 in 50 chance of the bot ringing the userphone and conversing with others.
+// Assigning a 1 in 50 chance of the bot bumping the server via disboard per every message sent.
 let random = Math.floor(Math.random() * 50);
   if(random === 1) {
 	await message.channel.send("!d bump")
