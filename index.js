@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
 const { Client, MessageEmbed } = require('discord.js');
-const TOKEN = 'NzY3MDk2MjY2NzM5MDIzODcy.X4s89Q.p8_2Y9hctz6gWgwqW2mN7jk4Ypw';
+const TOKEN = ''; // Enter your own token here.
 const raw = fs.readFileSync('patterns.json');
 const chanceToAdd = 0.1; // Determines the chance for the bot to add a message to the JSON file (.5 = 50% chance).
 const chanceToRespond = 0.2; // Determines the chance for the bot to respond to a message (.2 = 20% chance).
