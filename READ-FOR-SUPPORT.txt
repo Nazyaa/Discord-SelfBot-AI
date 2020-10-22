@@ -1,0 +1,11 @@
+Alright, looks like you're interested in using the A.I., so I'm going to cover the basics on what you need in order for your bot to thrive.
+
+Requirements:
+  - An Alternate Dicord Account. Discord Selfbots are against T.O.S., if you get caught don't let your main account get screwed over.
+  - Your chosen Discord Accounts user token. https://www.youtube.com/watch?v=lqSSXwcL7o0
+  - Node.js. https://nodejs.org/en/download/
+  - Discord.js VERSION 11.4.2. (npm install discord.js@11.4.2 in terminal/command prompt).
+  
+  
+Once you've set everything up, download the bots files and input your token into the code (the option to do this should be at the very top).
+BEAR IN MIND. DISCORD.JS VERSION 11.4.2 IS THE LAST DISCORD.JS VERSION TO SUPPORT SELFBOTS, ANY NEWER VERSION WILL NOT WORK. YOU MUST TYPE npm install discord.js@11.4.2 IF YOU WANT YOUR BOT TO WORK.
