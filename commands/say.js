@@ -4,7 +4,7 @@ module.exports ={
     execute(client, message, args){
         var text = message.content.split(' ').slice(1).join(' ');
         if(!text) return;
-        if(message.author.id !== "286770288396337163") {
+        if(message.author.id !== "") { //ENTER YOUR I.D. THIS COMMAND CAN ONLY WORK FOR BOT OWNERS.
             return;
         }
         message.channel.send(`${text}`);
