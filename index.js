@@ -8,8 +8,8 @@ const chanceToAdd = 0.1; // Determines the chance for the bot to add a message t
 const chanceToRespond = 0.2; // Determines the chance for the bot to respond to a message (.2 = 20% chance).
 const pingChance = 0.2; // Determines the chance for the bot to ping the user it is replying to (.3 = 30% chance).
 const replyFactor = 21000; // Determines the time it'll take to reply in Milliseconds.
-const learnChannelBL = []; // Nazya will not respond or talk in any of the channels in the array.
-const sendChannelBL = []; // Nazya will not learn any words from the channels in the array.
+const learnChannelBL = []; // The bot will not respond or talk in any of the channels in the array.
+const sendChannelBL = []; // The bot will not learn any words from the channels in the array.
 const wordsToFilter = [ "say" ]; // Any word within the array is filtered by the bot.
 let patterns = JSON.parse(raw); // Clarifying a pttern from the patterns.json file.
 let queue = 1; // Amount of messages allowed to be queued at a time. AVOID 0 FOR MESSAGE SPAM.
