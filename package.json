@@ -1,6 +1,6 @@
 {
-    "name": "nazya",
-    "description": "Nazya AI",
+    "name": "Discord Selfbot.",
+    "description": "shitty selfbot to create artificial activity",
     "version": "1.0.0",
     "main": "index.js",
     "engines": {
